@@ -6,9 +6,9 @@ Run in bash using the command
 
 	ruby primes_table.rb
 
-The number of primes can also be controlled from the command line
+The number of primes, 'n', can also be controlled from the command line
 
-	ruby primes_table.rb number
+	ruby primes_table.rb n
 
 ##Notes
 This challenge was undertaken with minimal prior knowledge of Ruby, and no prior knowledge of TDD/BDD!
