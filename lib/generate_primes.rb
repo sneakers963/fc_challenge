@@ -29,8 +29,8 @@ class GeneratePrimes
 	# http://programmingpraxis.com/2011/10/14/the-first-n-primes/
 
 	# def primes
-	# primes = []
-	# @priority_queue = []
+	# 	primes = []
+	# 	@priority_queue = []
 
 	# 	def check_pq(x)
 	# 		@priority_queue.include? x
