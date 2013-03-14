@@ -14,3 +14,12 @@ end
 
 pt = CreateProdTable.new(primes).prod_table
 FancifyTable.new(pt).display_table
+
+
+# require 'benchmark'
+
+# time = Benchmark.realtime do
+# 	100.times {GeneratePrimes.new.primes}
+# end
+
+# puts "#{time}"

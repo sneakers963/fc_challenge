@@ -7,6 +7,7 @@ class GeneratePrimes
 	end
 
 	# # Basic method - not efficient as divides every odd no. by every odd no. below it?
+
 	def primes
 		primes = []
 		primes << 2
@@ -20,14 +21,16 @@ class GeneratePrimes
 		  x += 2
 		end
 
-	# 	return primes
-	# end
+		return primes
+	end
 
 	# Uses O'Niell's method of implementing the Sieve of Eratosthenes to produce
-	# first n primes. See http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf
+	# first n primes. See http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf and
+	# http://programmingpraxis.com/2011/10/14/the-first-n-primes/
+
 	# def primes
-	# 	primes = []
-	# 	@priority_queue = []
+	# primes = []
+	# @priority_queue = []
 
 	# 	def check_pq(x)
 	# 		@priority_queue.include? x
