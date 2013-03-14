@@ -39,16 +39,16 @@ class GeneratePrimes
 			@priority_queue.index(x)
 		end
 
+		def pq_replace(x)
+			@priority_queue[pq_index(x)] = x + @priority_queue[pq_index(x)+1]
+		end
+
 		primes << 2
 		x = 3
 		
 		loop do
 			break if primes.length == @n_primes
-			if check_pq(x)
-				@priority_queue[pq_index(x)] = x + @priority_queue[pq_index(x)+1] while check_pq(x)
-			else
-				primes << x			
-			end
+			check_pq(x) ? (pq_replace(x) while check_pq(x)) : primes << x
 			@priority_queue << x**2 << 2*x
 			x += 2
 		end
