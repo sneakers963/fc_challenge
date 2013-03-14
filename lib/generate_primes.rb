@@ -16,8 +16,8 @@ class GeneratePrimes
 		loop do
 			break if primes.length == @n_primes # End loop when desired number has been calculated
 	    y = 3
-	    y += 2 until x % y == 0 # Loop to test if x is divisible by any number below it, y
-	    primes << x if x == y # If the number was not divisible by any below itself, it is a prime
+	    y += 2 until x % y == 0 # Loop to test if x is divisible by any odd number below it, y
+	    primes << x if x == y # If the (odd) number was not divisible by any (odd) below itself, it is a prime
 		  x += 2
 		end
 
