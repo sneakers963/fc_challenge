@@ -2,7 +2,7 @@
 
 require 'spec_helper' # randomises test order
 require 'generate_primes' # default location in ./lib
-require 'mathn' # Needed to access Prime class
+require 'mathn' # Needed to access Prime class from mathn module
 
 describe GeneratePrimes do
 	describe '#primes' do

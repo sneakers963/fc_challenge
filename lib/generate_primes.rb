@@ -9,12 +9,15 @@ class GeneratePrimes
 	# Basic method - not efficient as divides every odd no. by every odd no. below it?
 
 	def primes
-		primes = []
-		primes << 2
+		# primes = []
+		# primes << 2
+		primes = [2] # combined previous two lines
 		x = 3
 
 		loop do
 			break if primes.length == @n_primes # End loop when desired number has been calculated
+		# while primes.length < @n_primes # Alternative 1 to loop do, break
+		# until primes.length == @n_primes # Alternative 2 to loop do, break
 			y = 3
 			y += 2 until x % y == 0 # Loop to test if x is divisible by any odd number below it, y
 			primes << x if x == y # If the (odd) number was not divisible by any (odd) below itself, it is a prime
