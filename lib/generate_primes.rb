@@ -6,7 +6,7 @@ class GeneratePrimes
 		@n_primes = num
 	end
 
-	# # Basic method - not efficient as divides every odd no. by every odd no. below it?
+	# Basic method - not efficient as divides every odd no. by every odd no. below it?
 
 	def primes
 		primes = []
@@ -15,10 +15,10 @@ class GeneratePrimes
 
 		loop do
 			break if primes.length == @n_primes # End loop when desired number has been calculated
-	    y = 3
-	    y += 2 until x % y == 0 # Loop to test if x is divisible by any odd number below it, y
-	    primes << x if x == y # If the (odd) number was not divisible by any (odd) below itself, it is a prime
-		  x += 2
+			y = 3
+			y += 2 until x % y == 0 # Loop to test if x is divisible by any odd number below it, y
+			primes << x if x == y # If the (odd) number was not divisible by any (odd) below itself, it is a prime
+			x += 2
 		end
 
 		return primes
